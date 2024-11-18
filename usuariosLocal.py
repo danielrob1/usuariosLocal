@@ -26,9 +26,10 @@ for usuario in listaUsuarios:
     hilos.append(hilo)
     hilo.start()
 
+#Esperar a que todos los hilos terminen de ejecutarse
 for hilo in hilos:
     hilo.join()
-print("Todos los hilos han terminado")
+print("Todos los usuarios se han procesado")
 
 
 
